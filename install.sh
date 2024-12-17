@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Step 1: Install Roblox Player
+# Step 1: Install Roblox
 echo "Installing Roblox..."
 curl -s "https://clientsettingscdn.roblox.com/v2/client-version/MacPlayer" | grep -o '"clientVersionUpload":"[^"]*' | grep -o '[^"]*$' | xargs -I {} curl "http://setup.rbxcdn.com/mac/{}-RobloxPlayer.zip" -o "~/Desktop/RobloxPlayer.zip" && \
 [ -d "/Applications/Roblox.app" ] && rm -rf "/Applications/Roblox.app" && \
